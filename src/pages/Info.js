@@ -25,8 +25,8 @@ let history = useHistory()
 const goback = () => history.push('/')
 
   return (
-    <div className='bg-white-100 dark:bg-gray-800 dark:text-white'>
-      <div className='w-screen shadow-md py-6 px-3 bg-white dark:bg-gray-700 dark:text-white mb-16'>
+    <div className='w-100% bg-white-100 dark:bg-gray-800 dark:text-white'>
+      <div className='w-100% shadow-md py-6 px-3 bg-white dark:bg-gray-700 dark:text-white mb-10'>
       <div className="flex container mx-auto">
       <h1 className='font-bold text-xl'>Where in the world?</h1>
             <div className='ml-auto font-medium'>
@@ -34,17 +34,17 @@ const goback = () => history.push('/')
             </div>
       </div>
       </div>
-      <div className='container mx-auto mb-16'>
-        <button className='px-8 py-2 bg-white text-gray-600 shadow-md 
+      <div className='container mx-auto '>
+        <button className='px-8 py-2 ml-1 mb-8 bg-white text-gray-600 shadow-md 
         rounded-lg tracking-wide dark:bg-gray-700 dark:text-white'
         onClick={() => goback()}
         >
         <i class='fas fa-arrow-left text-gray fs-1 mr-2'></i>Back
         </button>
       </div>
-      <div className='container flex mx-auto p-8 pl-0 pr-0'>
-        <img src={state.flag} className='w-1/3 h-1/5 pr-10 ' alt={state.name}></img>
-        <div className='p-8 pl-10 mt-3 ml-14'>
+      <div className='w-100% container flex mx-auto pl-2 pr-0 justify-center'>
+        <img src={state.flag} className='w-1/3 h-1/5 pr-0 ml-0' alt={state.name}></img>
+        <div className='p-8 pl-10 mt-3 ml-13'>
           <h2 className='font-bold text-2xl mb-8'>{state.name}</h2>
           <div className='flex'>
           <div className='space-y-2 text-base'>

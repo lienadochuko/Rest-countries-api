@@ -4,7 +4,7 @@ import Info from "./pages/Info";
 
 function App() {
   return (
-    <div className="header">
+    <div className="header w-full">
        <Switch>
        <Route path="/Info" >
           <Info />

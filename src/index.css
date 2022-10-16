@@ -4,6 +4,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,800;1,600&display=swap');
 
+:root {
+    width: 100%;
+}
 body {
+    width: 100%;
     font-family: 'Nunito Sans', sans-serif;
 }
