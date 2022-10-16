@@ -7,7 +7,7 @@ function Home() {
     const [countries, setCountries] = useState([]);
     const [theme, setTheme] = useState(true);
     const [btnswitch, setBtnswitch] = useState('<i class="fas fa-sun"></i> Light Mode')
-
+  // eslint-disable-next-line
     useEffect(async () => {
         const response = await fetch('https://restcountries.com/v2/all')
         const data = await response.json()
