@@ -25,7 +25,7 @@ let history = useHistory()
 const goback = () => history.push('/')
 
   return (
-    <div className='w-100% bg-white-100 dark:bg-gray-800 dark:text-white'>
+    <div className='w-full h-full bg-white-100 dark:bg-gray-800 dark:text-white'>
       <div className='w-100% shadow-md py-6 px-3 bg-white dark:bg-gray-700 dark:text-white mb-10'>
       <div className="flex container mx-auto">
       <h1 className='font-bold text-xl'>Where in the world?</h1>
@@ -42,9 +42,9 @@ const goback = () => history.push('/')
         <i class='fas fa-arrow-left text-gray fs-1 mr-2'></i>Back
         </button>
       </div>
-      <div className='w-100% container flex mx-auto pl-2 pr-0 justify-center'>
-        <img src={state.flag} className='w-1/3 h-1/5 pr-0 ml-0' alt={state.name}></img>
-        <div className='p-8 pl-10 mt-3 ml-13'>
+      <div className='w-100% h-20vh container flex flex-col md:flex-row lg:flex-row mx-auto pl-2 pr-0 justify-center'>
+        <img src={state.flag} className='w-full pr-0 ml-0 sm:w-full md:w-1/3 lg:w-1/3' alt={state.name}></img>
+        <div className='p-8 lg:pl-10 mt-3 ml-0 md:ml-0 lg:ml-13'>
           <h2 className='font-bold text-2xl mb-8'>{state.name}</h2>
           <div className='flex'>
           <div className='space-y-2 text-base'>
@@ -54,14 +54,14 @@ const goback = () => history.push('/')
             <p><b>Sub Region: </b>{state.subregion}</p>
             <p><b>Capital: </b>{state.capital}</p>
           </div>
-          <div className='space-y-2 text-base ml-28'>
+          <div className='space-y-2 text-base ml-10 sm:ml-28 md:ml-28 lg:ml-28'>
             <p><b>Top Level Domain: </b>{state.topLevelDomain}</p>
             <p><b>Currencies: </b>{state.currencies.map(cur => cur.name)}</p>
             <p><b>Languages: </b>{state.languages.map(lang => lang.name+', ')}</p>
             
             </div>
           </div>
-          <div className="flex mt-16 ml-0">
+          <div className="flex flex-col sm:flex-row md:flex-row lg:flex-row mt-16 ml-0">
             <b className='mt-1'>Border Countries: </b> <p className=' text-xs ml-3 px-8 py-2 bg-white text-gray-600 shadow-md 
         rounded-lg tracking-wide dark:bg-gray-700 dark:text-white'>{state.borders+' ,'} </p>
             </div>
